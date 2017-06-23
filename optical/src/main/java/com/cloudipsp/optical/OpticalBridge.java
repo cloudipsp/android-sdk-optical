@@ -26,6 +26,8 @@ public class OpticalBridge {
         final Intent intent = new Intent(activity, CardIOActivity.class);
         intent.putExtra(CardIOActivity.EXTRA_SUPPRESS_CONFIRMATION, true);
         intent.putExtra(CardIOActivity.EXTRA_SUPPRESS_MANUAL_ENTRY, true);
+        intent.putExtra(CardIOActivity.EXTRA_HIDE_CARDIO_LOGO, true);
+        intent.putExtra(CardIOActivity.EXTRA_USE_PAYPAL_ACTIONBAR_ICON, false);
         activity.startActivityForResult(intent, RQ_SCAN);
     }
 
